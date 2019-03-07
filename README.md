@@ -1,3 +1,9 @@
+# Geotagging images from gpx file
+
+Use correct geosync value to assign locations
+
+    exiftool -overwrite_original -geosync=0:0 -geotag 2930949.gpx ./
+
 # GPX memos using exiftool and gpsbabel
 
 ## Create gpx file from geotagged series of pictures
