@@ -4,6 +4,12 @@ Use correct geosync value to assign locations
 
     exiftool -overwrite_original -geosync=0:0 -geotag 2930949.gpx ./
 
+# Upload to Mapillary
+
+Upload already geotagged photos from current directory to Mapillary (user: kami911, threads: 10)
+
+    mapillary_tools process_and_upload --advanced --number_threads 10 --user_name kami911 --import_path ./
+
 # GPX memos using exiftool and gpsbabel
 
 ## Create gpx file from geotagged series of pictures
